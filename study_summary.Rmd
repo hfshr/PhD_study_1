@@ -1,12 +1,15 @@
 ---
-title: "Summary of Ph.D. study"
-output:
-   bookdown::html_document2:
-    number_sections: false
-    css: style.css
-
-bibliography: r_references.bib    
-graphics: yes
+title: "Summary of PhD study"
+description: |
+  A brief overview of the main study in my PhD
+author:
+  - name: Harry Fisher 
+    url: https://harryfish.netlify.com
+    affiliation: 
+    affiliation_url: 
+date: "`r Sys.Date()`"
+output: distill::distill_article
+bibliography: r_references.bib 
 ---
 
 ```{r echo=FALSE, include=FALSE}
@@ -16,15 +19,15 @@ library(tidyverse)
 library(papaja)
 library(RHRV)
 library(kableExtra)
+library(bnlearn)
 load("allfiles.Rdata")
 knitr::opts_chunk$set(echo = FALSE)
-
 
 ```
 
 <div style="line-height: 2em;"> 
 
-This document provides a brief summary of the first study from my Ph.D., with a focus on the analysis and results.
+This document provides a brief summary of the first study from my PhD, with a focus on the analysis and results.
 
 # Study background
 
@@ -147,19 +150,11 @@ This study provided a novel approach to addressing the sport injury problem from
 my_citations <- cite_r(file = "r_references.bib")
 ```
 
-
 ## R Packages used
 
 `r my_citations`
 
-
-# References
-
-<div id="refs"></div>
-
-# (APPENDIX) Appendix {-} 
-
-# Variables with explanation
+# Appendix - Variables with explanation
 
 ```{r results='asis'}
 varcutoffs %>% 
