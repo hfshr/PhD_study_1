@@ -19,6 +19,7 @@ library(kableExtra)
 load("allfiles.Rdata")
 knitr::opts_chunk$set(echo = FALSE)
 
+
 ```
 
 <div style="line-height: 2em;"> 
@@ -27,7 +28,7 @@ This document provides a brief summary of the first study from my Ph.D., with a 
 
 # Study background
 
-__Title: An interdisciplinary examination of stress-related factors and injury occerence in athletes.__
+__Title: An interdisciplinary examination of stress-related factors and injury occurrence in athletes.__
 
 Sports injury remains a problem and carries several undesirable consequences for the athlete. Research has typically address sports injury from a mono-disciplinary perspective, with the respective fields in sport science (e.g., Psychological, Biomechanical and Physiological perspectives) identifying risk factors in an isolated fashion.
 Recently, there have been calls for sports injury research to move to a more complex systems based approach, where the interactions between a range of risk factors from different disciplines interact.
